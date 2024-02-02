@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Floripa Mais Tec</title>
+    <meta name="description" content="Descrição da sua página">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div id="marcas_preferencia">
+        <span>Quais são as suas marcas de preferencia?</span>
+
+        <input type="checkbox" name="marcas_preferencia" id="ferrari" value="ferrari">
+        <label for="ferrari">Ferrari</label>
+
+        <input type="checkbox" name="marcas_preferencia" id="ford" value="ford">
+        <label for="ford">Ford</label>
+        
+        <input type="checkbox" name="marcas_preferencia" id="mercedes" value="mercedes">
+        <label for="mercedes">Mercedes</label>
+
+        <input type="checkbox" name="marcas_preferencia" id="bmw" value="bmw">
+        <label for="bmw">BMW</label>
+    </div>
+
+    <button onclick="verificarMarcacoes()">Verificar marcacoes</button>
+
+    <script>
+        function verificarMarcacoes() {
+            const elementos = document.querySelectorAll('input[name="marcas_preferencia"]:checked')
+            marcas_preferencia = []
+
+            elementos.forEach(item => {
+                marcas_preferencia.push(item.value)
+            })            
+        }
+    </script>
+</body>
+
+</html>

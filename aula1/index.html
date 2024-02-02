@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Floripa Mais Tec</title>
+    <meta name="description" content="Descrição da sua página">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!-- <section id="secao-noticias">
+        <div class="card-noticia">
+            <img>
+            <span>Mega-Sena sorteia dezenas do concurso 2.682, com prêmio de R$ 74,2 milhões; veja números</span>
+        </div>
+    </section>
+
+    <section id="secao-mapa-site">
+
+    </section> -->
+
+    <!-- 
+        Resposta Form:
+
+        {
+            nome_pessoa: '',
+            marca: ''
+        }
+     -->
+    <form>
+
+        <input type="text" name="nome_pessoa" placeholder="Digite o seu nome">
+
+        <div id="marca_carro">
+            <span>Qual a marca do seu carro?</span>
+    
+            <input type="radio" id="vw" name="marca" value="vw">
+            <label for="vw">VW</label>
+            
+            <input type="radio" id="fiat" name="marca" value="fiat">
+            <label for="fiat">Fiat</label>
+    
+            <input  type="radio" id="ford" name="marca" value="ford">
+            <label for="ford">Ford</label>
+        </div>
+
+        <div id="marcas_preferencia">
+            <span>Quais são as suas marcas de preferencia?</span>
+
+            <input type="checkbox" id="ferrari" name="marcas_preferencia" value="ferrari">
+            <label for="ferrari">Ferrari</label>
+
+            <input type="checkbox" id="ford" name="marcas_preferencia" value="ford">
+            <label for="ford">Ford</label>
+        </div>
+
+        <div>
+            <span>Por onde encontrou este curso?</span>
+            <select name="encontrou_curso">
+                <option value="google">Google</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="" selected>Não sei responder.</option>                
+            </select>
+        </div>
+    </form>
+
+    <button onclick="cadastrarUsuario()">Cadastrar</button>
+
+    <script>
+        function cadastrarUsuario() {
+            alert('Usuário cadastrado.')
+        }
+    </script>
+</body>
+
+</html>

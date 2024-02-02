@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Floripa Mais Tec</title>
+    <meta name="description" content="Descrição da sua página">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <form id="form-cadastro">
+        
+        <input id="input_nome" type="text" name="nome" placeholder="Digite o seu nome" value="Yan" class="custom_input">
+        <input type="text" name="endereco" placeholder="Endereço" value="Admar Gonzaga" class="custom_input">
+
+        <div id="marca_carro">
+            <span>Qual a marca do seu carro?</span>
+
+            <input type="radio" id="vw" name="marca" value="vw">
+            <label for="vw">VW</label>
+
+            <input type="radio" id="fiat" name="marca" value="fiat">
+            <label for="fiat">Fiat</label>
+
+            <input type="radio" id="ford" name="marca" value="ford">
+            <label for="ford">Ford</label>
+        </div>
+
+        <div id="marcas_preferencia">
+            <span>Quais são as suas marcas de preferencia?</span>
+
+            <input type="checkbox" name="marcas_preferencia" id="ferrari" value="ferrari">
+            <label for="ferrari">Ferrari</label>
+
+            <input type="checkbox" name="marcas_preferencia" id="ford" value="ford">
+            <label for="ford">Ford</label>
+        </div>
+
+        <div>
+            <span>Por onde encontrou este curso?</span>
+            <select name="onde_encontrou">
+                <option value="google">Google</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="" selected>Não sei responder.</option>
+            </select>
+        </div>
+
+    </form>
+
+    <button onclick="cadastrarUsuario()">Cadastrar</button>
+
+    <script>
+        function cadastrarUsuario() {
+            const form = document.getElementById('form-cadastro')
+
+            const nome = form['nome'].value
+            const endereco = form['endereco'].value
+            const marca_carro = form['marca'].value
+            const marcas_preferencia = form['marcas_preferencia'].value
+            const onde_encontrou = form['onde_encontrou'].value
+
+            console.log(nome)
+            console.log(endereco)
+            console.log(marca_carro)
+            console.log(marcas_preferencia)
+            console.log(onde_encontrou)
+
+
+
+
+            // const elements = document.querySelectorAll('.custom_input')
+            // elements.forEach(item => {
+            //     console.log(item.name, item.value)
+            // })
+
+            // for (let i = 0; i < elements.length; i++) {
+            //   console.log(elements[i].value)                
+            // }
+
+
+            // console.log('Nome: ', elements[0].value)
+            // console.log('Endereço: ', elements[1].value)
+
+            // const input_nome = document.getElementById('input_nome')    
+            
+            // if (input_nome) {
+            //     console.log(input_nome.value)
+            // } else {
+            //     console.error('Não foi possível encontrar o #input_nome')
+            // }
+        }
+    </script>
+</body>
+
+</html>

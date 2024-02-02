@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Floripa Mais Tec</title>
+    <meta name="description" content="Descrição da sua página">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>    
+
+    <h2>Cadastro de Produtos</h2>
+    <form id="form-cadastro" onsubmit="cadastrarProduto(event)">
+        <input type="text" name="nome" value="saia" required placeholder="Nome do produto">
+        <input type="text" name="marca" value="patbo" required minlength="5" maxlength="20" placeholder="Marca">
+        <input type="text" name="colecao" value="2024" required placeholder="Coleção">
+                
+        <button>Cadastrar</button>
+    </form>
+
+    <!-- <button onclick="cadastrarProduto()">Cadastrar</button> -->
+
+    <!-- Sistema de busca -->
+    <!-- <input id="input_search" type="text" placeholder="Digite para filtrar os dados">
+    <button onclick="buscarDado()">Buscar</button> -->
+    <!-- JAVASCRIPT -->
+    <script>
+        function cadastrarProduto(event) {
+            event.preventDefault()
+            const form = document.getElementById('form-cadastro')
+
+            console.log(`
+                Nome: ${form['nome'].value}
+                Marca: ${form['marca'].value}
+                Coleção: ${form['colecao'].value}
+            `)
+
+            // alert('Produto cadastrado com sucesso.')
+        }
+
+        // function buscarDado() {
+        //     const input_search = document.getElementById('input_search')
+        //     console.log(input_search.value)
+        // }
+    </script>
+</body>
+
+</html>
