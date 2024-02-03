@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(216, 229, 240);    
+}

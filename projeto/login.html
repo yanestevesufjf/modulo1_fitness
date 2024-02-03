@@ -1,0 +1,93 @@
+<!-- 
+    Form (email | senha)
+    Botao
+ -->
+<!-- 
+    Gráficos
+    Listagem
+    Menu
+ -->
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/form.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box-login {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* width: 300px; */
+            align-items: center;
+        }
+
+        form * {
+            margin-bottom: 14px;
+        }
+
+        form input {
+            width: 240px;
+            height: 27px;
+        }
+
+        form button {
+            width: 120px;
+            height: 27px;
+            background-color: rgb(79, 108, 255);
+            border: none;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 640px) {
+            .box-login {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box-login">
+            <h4>Login</h4>
+            <form>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button>Entrar</button>
+            </form>
+
+            <button>Esqueci a senha</button>
+        </div>
+
+        <span style="position: absolute; bottom: 10px; right: 10px;">Contato</span>
+    </div>
+</body>
+
+</html>
